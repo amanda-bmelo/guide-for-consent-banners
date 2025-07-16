@@ -14,11 +14,12 @@ No cenário digital atual, a coleta de dados é onipresente, impulsionada pelo c
 ### 🔍 A Pesquisa
 Este Trabalho de Conclusão de Curso (TCC) apresenta um Guia interativo desenvolvido com base em uma metodologia de Design Centrado no Usuário (DCU), envolvendo dois ciclos de pesquisa, ideação, prototipagem e avaliação. O guia oferece recomendações detalhadas e exemplos práticos para a elaboração de banners de consentimento que não apenas aderem aos requisitos da LGPD, mas também promovem a transparência e a boa usabilidade. Através de experimentos com grupos focais, demonstramos a eficácia do guia em capacitar profissionais a desenvolverem soluções que respeitam a privacidade do usuário e evitam práticas manipuladoras. O objetivo final é fomentar um ambiente digital mais ético e seguro para todos.
 
-### 🔗 Links dos Projetos no Figma
+### 🔗 Links
 Acesse os protótipos e designs do projeto aqui:
 
 - [Protótipo do Guia](https://www.figma.com/proto/K6AA8T6FckCxGW5TvYd8Cv/Guia-para-Cookies?node-id=203-143&p=f&t=w64WVdhc8Tl2DGE3-1&scaling=min-zoom&content-scaling=fixed&page-id=203%3A142&starting-point-node-id=203%3A143)
 - [Modelos de Banners](https://www.figma.com/community/file/1506305515134976686)
+- [Apresentação em slides](https://www.canva.com/design/DAGs4kzIHZA/M8msLuWsC7fZCTMiIiXvBg/view?utm_content=DAGs4kzIHZA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb05f262ed)
 
 
 <div id="English"></div>
@@ -37,6 +38,7 @@ Access the project prototypes and designs here:
 
 - [Guide Prototype](https://www.figma.com/proto/K6AA8T6FckCxGW5TvYd8Cv/Guia-para-Cookies?node-id=203-143&p=f&t=w64WVdhc8Tl2DGE3-1&scaling=min-zoom&content-scaling=fixed&page-id=203%3A142&starting-point-node-id=203%3A143)
 - [Banner Templates](https://www.figma.com/community/file/1506305515134976686)
+- [Slide presentation](https://www.canva.com/design/DAGs4kzIHZA/M8msLuWsC7fZCTMiIiXvBg/view?utm_content=DAGs4kzIHZA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb05f262ed)
 
 
 <div id="Spanish"></div>
@@ -55,3 +57,4 @@ Accede a los prototipos y diseños del proyecto aquí:
 
 - [Prototipo de la Guía](https://www.figma.com/proto/K6AA8T6FckCxGW5TvYd8Cv/Guia-para-Cookies?node-id=203-143&p=f&t=w64WVdhc8Tl2DGE3-1&scaling=min-zoom&content-scaling=fixed&page-id=203%3A142&starting-point-node-id=203%3A143)
 - [Plantillas de Banners](https://www.figma.com/community/file/1506305515134976686)
+- [Presentación de diapositivas](https://www.canva.com/design/DAGs4kzIHZA/M8msLuWsC7fZCTMiIiXvBg/view?utm_content=DAGs4kzIHZA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb05f262ed)
