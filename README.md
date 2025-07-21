@@ -1,11 +1,11 @@
-# Guia para Desenvolvimento de Banners de Consentimento para Coleta de Dados Através de Cookies 🍪
+# Guia para Desenvolvimento de Banners de Consentimento para Coleta de Dados Através de Cookies
 <p align="center">
 <a href="#Portuguese">🇧🇷</a> | <a href="#English">🇺🇸</a> | <a href="#Spanish">🇪🇸</a>
 </p>
 
 <div id="Portuguese"></div>
 
-## 🇧🇷 Guia para Desenvolvimento de Banners de Consentimento para Coleta de Dados Através de Cookies
+## 🇧🇷 Guia para Desenvolvimento de Banners de Consentimento para Coleta de Dados Através de Cookies 🍪
 Bem-vindo(a) ao repositório do TCC que visa auxiliar designers e desenvolvedores a criar banners de consentimento para coleta de dados via cookies, em conformidade com a LGPD e as melhores práticas de Usabilidade e Experiência do Usuário (UX).
 
 ### 🚀 Motivação do Projeto
@@ -24,7 +24,7 @@ Acesse os protótipos e designs do projeto aqui:
 
 <div id="English"></div>
 
-## 🇺🇸 Guide for Developing Consent Banners for Cookie Data Collection
+## 🇺🇸 Guide for Developing Consent Banners for Cookie Data Collection 🍪
 Welcome to the Final Project repository aimed at assisting designers and developers in creating consent banners for cookie data collection, in compliance with LGPD and best practices in Usability and User Experience (UX).
 
 ### 🚀 Project Motivation
@@ -43,7 +43,7 @@ Access the project prototypes and designs here:
 
 <div id="Spanish"></div>
 
-## 🇪🇸 Guía para el Desarrollo de Banners de Consentimiento para la Recopilación de Datos a Través de Cookies
+## 🇪🇸 Guía para el Desarrollo de Banners de Consentimiento para la Recopilación de Datos a Través de Cookies 🍪
 Bienvenido(a) al repositorio del TCC (Trabajo de Conclusión de Curso) que tiene como objetivo ayudar a diseñadores y desarrolladores a crear banners de consentimiento para la recopilación de datos a través de cookies, en cumplimiento con la LGPD y las mejores prácticas de Usabilidad y Experiencia del Usuario (UX).
 
 ### 🚀 Motivación del Proyecto
