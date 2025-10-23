@@ -25,9 +25,8 @@
   align-items: center;
 }
 
-
 .home-section .down-arrow .icon {
-  transition: transform 0.3s cubic-bezier(.4,2,.3,1);
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.3, 1);
 }
 
 .home-section .down-arrow:hover .icon {
@@ -42,7 +41,14 @@
   color: var(--dark-blue-color);
 }
 
-
 @media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
 
+  .home-section .down-arrow .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
