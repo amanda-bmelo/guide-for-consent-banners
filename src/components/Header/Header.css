@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  margin: 0;
+  top: 0.5rem;
+  z-index: 100;
 }
 
 .header-nav ul {
@@ -55,4 +59,23 @@
   width: 40px;
   height: 40px;
   display: block;
+}
+
+.header-logo a {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo a .icon {
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.4, 2, 0.3, 1), box-shadow 0.2s;
+}
+
+.header-logo a:hover .icon,
+.header-logo a:focus .icon {
+  transform: scale(1.18) rotate(-8deg);
+  box-shadow: 0 4px 16px rgba(60, 180, 231, 0.12);
 }
