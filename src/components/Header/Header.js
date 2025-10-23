@@ -1,12 +1,5 @@
-
-
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "../../sections/Home";
-import About from "../../sections/About";
-import Examples from "../../sections/Examples";
-import Preferences from "../../sections/Preferences/Preferences";
-import Guide from "../../sections/Guide/Guide";
+import { BrowserRouter as Router } from "react-router-dom";
 import Icon from "../Icon/Icon";
 import "./Header.css";
 
@@ -15,34 +8,25 @@ function Header() {
     <Router>
       <nav className="header-nav">
         <div className="header-logo">
-          <Link to="/">
+          <a href="#home">
             <Icon svgPath={"cookie.svg"} className="icon" size={40} />
-          </Link>
+          </a>
         </div>
         <ul>
           <li>
-            <Link to="/guide">Guia</Link>
+            <a href="#guide">Guia</a>
           </li>
           <li>
-            <Link to="/preferences">Preferências</Link>
+            <a href="#preferences">Preferências</a>
           </li>
           <li>
-            <Link to="/examples">Exemplos</Link>
+            <a href="#examples">Exemplos</a>
           </li>
           <li>
-            <Link to="/about">Informações</Link>
+            <a href="#about">Informações</a>
           </li>
         </ul>
       </nav>
-
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/guide" element={<Guide />} />
-        <Route path="/preferences" element={<Preferences />} />
-        <Route path="/examples" element={<Examples />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
     </Router>
   );
 }

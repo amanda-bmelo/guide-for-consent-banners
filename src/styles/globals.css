@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Anek Devanagari', Arial, Helvetica, sans-serif;
 }
