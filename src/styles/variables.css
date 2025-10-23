@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
 
 :root {
+  --dark-blue-color: #1c7ea8;
   --blue-color-primary: #3cb4e7;
   --light-blue-color: #b3e8ff;
   --green-color-primary: #1ca876;
@@ -12,5 +12,6 @@
   --light-yellow-color: #fbbc1a;
   --light-color: #fbfbfb;
   --light-gray-color: #eaeaea;
+  --medium-dark-color: #323232;
   --dark-color: #222;
 }
