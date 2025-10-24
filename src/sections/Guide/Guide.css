@@ -1,82 +1,86 @@
 .guide-section {
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: linear-gradient(
+    90deg,
+    var(--light-gray-color) 10%,
+    var(--background-color) 100%
+  );
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
   border-radius: 2rem;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
   padding: 60px 0 40px 0;
   margin: 2rem;
 }
 
 .guide-header {
-	text-align: center;
-	margin-bottom: 48px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .guide-header h2 {
-	font-size: 3.2rem;
-	font-weight: 700;
-	color: var(--dark-color, #222);
-	margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--dark-color, #222);
+  margin-bottom: 0.5rem;
 }
 
 .guide-header p {
-	font-size: 1.4rem;
-	color: var(--medium-dark-color, #444);
-	margin: 0;
+  font-size: 1.4rem;
+  color: var(--medium-dark-color, #444);
+  margin: 0;
 }
 
 .guide-list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 40px 32px;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+  justify-content: center;
 }
 
 .guide-item {
-	display: flex;
-	align-items: flex-start;
-	gap: 32px;
-	background: none;
-	min-width: 340px;
-	max-width: 700px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  background: none;
+  min-width: 340px;
+  max-width: 700px;
 }
 
 .guide-item .card {
-	flex: 1 1 260px;
+  flex: 1 1 260px;
 }
 
 .guide-image {
-	flex: 1 1 260px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 180px;
-	max-width: 320px;
+  flex: 1 1 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  max-width: 320px;
 }
 
 .guide-image img {
-	width: 100%;
-	max-width: 320px;
-	border-radius: 12px;
-	box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 900px) {
-	.guide-list {
-		flex-direction: column;
-		gap: 32px;
-		align-items: center;
-	}
-	.guide-item {
-		flex-direction: column;
-		align-items: center;
-		max-width: 100%;
-		gap: 18px;
-	}
-	.guide-image {
-		min-width: 120px;
-		max-width: 220px;
-	}
+  .guide-list {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .guide-item {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    gap: 18px;
+  }
+  .guide-image {
+    min-width: 120px;
+    max-width: 220px;
+  }
 }
