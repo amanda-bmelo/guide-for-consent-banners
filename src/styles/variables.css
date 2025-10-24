@@ -14,4 +14,7 @@
   --light-gray-color: #eaeaea;
   --medium-dark-color: #323232;
   --dark-color: #222;
+  --background-card-color: rgba(231, 231, 231, 0.7);
+  --red-chocolate-color: rgba(204, 8, 8, 0.5);
+  --blue-chocolate-color: rgba(74, 114, 137, 0.5);
 }
