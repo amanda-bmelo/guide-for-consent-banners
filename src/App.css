@@ -1,5 +1,6 @@
 body {
-  background-image: url("/src/assets/icons/bg-cookies.svg");
-  background-repeat: no-repeat;
+  background-image: url("/src/assets/icons/bg_cookies.svg");
+  background-repeat: repeat;
   background-size: cover;
+  width: 100%;
 }

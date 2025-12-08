@@ -36,7 +36,7 @@
 }
 
 .header-nav a {
-  background: var(--light-gray-color);
+  background: var(--light-color);
   color: var(--dark-color);
   font-weight: 700;
   text-decoration: none;
