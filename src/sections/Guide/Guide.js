@@ -42,7 +42,7 @@ const recommendations = [
 
 const Guide = () => {
   return (
-    <section id="guide" className="guide-section">
+    <section id="guide" className="section guide-section">
       <div className="guide-header">
         <h2>Guia</h2>
         <p>Recomendações básicas para desenvolver banners</p>
