@@ -19,3 +19,25 @@ body {
   margin: 2rem;
   color: var(--dark-color);
 }
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4rem;
+  color: var(--medium-dark-color);
+  margin: 0;
+}

@@ -45,7 +45,7 @@ const Guide = () => {
     <section id="guide" className="section guide-section">
       <div className="guide-header">
         <h2>Guia</h2>
-        <p>Recomendações básicas para desenvolver banners</p>
+        <h3>Recomendações básicas para desenvolver banners</h3>
       </div>
       <div className="guide-list">
         {recommendations.map((rec, idx) => (
