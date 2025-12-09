@@ -5,6 +5,7 @@ import Guide from "./sections/Guide/Guide";
 import Preferences from "./sections/Preferences/Preferences";
 import Examples from "./sections/Examples";
 import About from "./sections/About";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Examples />
         <About />
       </main>
+      <Footer />
     </>
   );
 }
