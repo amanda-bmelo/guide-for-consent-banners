@@ -1,5 +1,5 @@
 .home-section {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +21,7 @@
 
 .home-section .down-arrow {
   display: flex;
+  margin-top: 10em;
   justify-content: center;
   align-items: center;
 }
