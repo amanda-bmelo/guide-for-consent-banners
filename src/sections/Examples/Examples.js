@@ -4,8 +4,8 @@ import figmaAnimation from "../../assets/images/figma_animation.gif";
 const Examples = () => {
   return (
     <section id="examples" className="section examples-section">
-      <h2>Pegue um protótipo do Figma</h2>
-      <h3>Clique na imagem para abrir o projeto que deseja</h3>
+      <h2>Pegue um exemplo de banner</h2>
+      <h3>Você pode usar os protótipos abaixo</h3>
       <div className="examples-group">
         <ul className="examples-list">
           <li className="examples-item">

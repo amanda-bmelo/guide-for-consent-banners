@@ -1,16 +1,18 @@
 .examples-group {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   padding: 80px 60px;
 }
 
 .examples-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 40px;
   list-style: none;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 2rem;
 }
 
 .examples-item {
