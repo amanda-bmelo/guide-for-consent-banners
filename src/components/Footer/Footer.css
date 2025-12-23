@@ -54,7 +54,7 @@ footer ul li p a {
 }
 
 footer ul li p a:hover {
-  color: var(--light-blue-color);
+  color: var(--blue-color-primary);
 }
 
 @media (max-width: 1024px) {
