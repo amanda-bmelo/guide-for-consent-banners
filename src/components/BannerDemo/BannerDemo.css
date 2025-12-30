@@ -1,0 +1,303 @@
+/* Banner Demo Base Styles */
+.banner-demo {
+  background-color: var(--light-color);
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.banner-text-content {
+  transition: filter 0.3s ease;
+}
+
+.banner-text-content p {
+  display: inline;
+}
+
+.banner-text-content p::after {
+  content: " ";
+}
+
+.blurred {
+  filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.banner-demo p {
+  font-size: 0.9rem;
+  line-height: 1;
+  color: var(--dark-color);
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.banner-demo p a {
+  color: var(--dark-color);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.banner-subtext {
+  display: block !important;
+  margin-top: 1rem !important;
+  font-size: 0.85rem !important;
+  color: var(--medium-dark-color) !important;
+}
+
+/* Banner Actions */
+.banner-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.banner-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-actions button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Banner 1 Buttons */
+.btn-accept {
+  background-color: var(--green-color-primary);
+  color: white;
+}
+
+.btn-reject {
+  background-color: var(--red-color-primary);
+  color: white;
+}
+
+.btn-manage {
+  background-color: var(--yellow-color-primary);
+  color: white;
+}
+
+/* Banner 2 Styles */
+.banner-2-top {
+  margin-bottom: 0.75rem;
+}
+
+.banner-2-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.banner-2-secondary {
+  flex: 1;
+}
+
+.banner-2-secondary .banner-subtext {
+  display: block !important;
+  margin-top: 0 !important;
+}
+
+.banner-2-layout .banner-text-content {
+  flex: 1;
+}
+
+.banner-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: filter 0.3s ease;
+}
+
+.toggle-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Toggle Switch */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-gray-color);
+  border: 2px solid var(--green-color-primary);
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 1px;
+  bottom: 1px;
+  background-color: var(--green-color-primary);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle input:checked + .toggle-slider {
+  background-color: var(--light-green-color);
+}
+
+.toggle input:checked + .toggle-slider:before {
+  transform: translateX(14px);
+  background-color: white;
+}
+
+.toggle-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.toggle-lines .line {
+  font-size: 0.8rem;
+  line-height: 1;
+  color: var(--dark-color);
+  background-color: transparent;
+  height: auto;
+  border-radius: 0;
+  max-width: 17rem ;
+}
+
+.toggle-lines .line strong {
+  font-weight: 700;
+}
+
+/* Banner 2 Buttons */
+.banner-2-actions {
+  justify-content: flex-end;
+}
+
+.btn-confirm {
+  background-color: var(--green-color-primary);
+  color: white;
+}
+
+.btn-reject-all {
+  background-color: var(--medium-dark-color);
+  color: white;
+}
+
+/* Banner 3 Buttons */
+.banner-3-actions {
+  justify-content: center;
+}
+
+.btn-accept-necessary {
+  background-color: var(--green-color-primary);
+  color: white;
+}
+
+.btn-accept-all {
+  background-color: var(--green-color-primary);
+  color: white;
+}
+
+.btn-manage-alt {
+  background-color: var(--yellow-color-primary);
+  color: white;
+}
+
+/* Minimized State */
+.banner-minimized {
+  width: 60px;
+  height: 60px;
+  background-color: var(--light-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-minimized:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.banner-minimized img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Banner Showcase Container */
+.banner-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.display-none {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-demo {
+    padding: 16px 18px;
+  }
+
+  .banner-2-layout {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .banner-actions {
+    justify-content: center;
+  }
+
+  .banner-actions button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .toggle-lines {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .banner-actions button {
+    width: 100%;
+  }
+}

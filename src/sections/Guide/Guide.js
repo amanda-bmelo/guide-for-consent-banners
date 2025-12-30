@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "../../components/Card/Card";
+import MiniSite from "../../components/MiniSite/MiniSite";
+import BannerShowcase from "../../components/BannerDemo/BannerDemo";
 import "./Guide.css";
 
 const recommendations = [
@@ -41,6 +43,13 @@ const recommendations = [
 ];
 
 const Guide = () => {
+  const scrollToRecommendation = (index) => {
+    const guideItems = document.querySelectorAll(".guide-item");
+    if (guideItems[index]) {
+      guideItems[index].scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <section id="guide" className="section guide-section">
       <div className="guide-header">
@@ -52,7 +61,11 @@ const Guide = () => {
           <div className="guide-item" key={idx + 1}>
             <Card number={idx + 1} text={rec.text} tags={rec.tags} />
             <div className="guide-image">
-              {/* <img src={require(`../../assets/images/${rec.image}`)} alt={`Recomendação ${idx}`} /> */}
+              {idx === 0 ? (
+                <MiniSite onButtonClick={() => scrollToRecommendation(1)} />
+              ) : (
+                <BannerShowcase recommendationNumber={idx + 1} />
+              )}
             </div>
           </div>
         ))}

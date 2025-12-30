@@ -1,58 +1,62 @@
 .guide-header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .guide-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px 32px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
 }
 
 .guide-item {
   display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  background: none;
-  min-width: 340px;
-  max-width: 700px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 62.5rem;
+}
+
+.guide-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .guide-item .card {
-  flex: 1 1 260px;
+  flex: 0 0 20rem;
+  width: 20rem;
 }
 
 .guide-image {
-  flex: 1 1 260px;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 180px;
-  max-width: 320px;
 }
 
 .guide-image img {
   width: 100%;
-  max-width: 320px;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  max-width: 20rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 900px) {
-  .guide-list {
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
-  }
+@media (max-width: 56.25rem) {
   .guide-item {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    gap: 18px;
+    flex-direction: column !important;
+    gap: 1.5rem;
   }
+  
+  .guide-item .card {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 20rem;
+  }
+  
   .guide-image {
-    min-width: 120px;
-    max-width: 220px;
+    width: 100%;
+    max-width: 25rem;
   }
 }
