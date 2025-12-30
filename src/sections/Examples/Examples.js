@@ -12,7 +12,7 @@ const Examples = () => {
             <iframe
               title="Cookie Consent Banner Example 1"
               style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-              width="450"
+              width="300"
               height="450"
               src="https://embed.figma.com/design/2prJ4RUgsjFpGgnAr5Rk5c/Cookie-Consent-Banner?node-id=0-1&embed-host=share"
               allowFullScreen
@@ -23,7 +23,7 @@ const Examples = () => {
             <iframe
               title="Cookie Consent Banner Example 2"
               style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-              width="450"
+              width="300"
               height="450"
               src="https://embed.figma.com/design/2prJ4RUgsjFpGgnAr5Rk5c/Cookie-Consent-Banner?node-id=1-2&embed-host=share"
               allowFullScreen
@@ -34,7 +34,7 @@ const Examples = () => {
             <iframe
               title="Cookie Consent Banner Example 3"
               style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-              width="450"
+              width="300"
               height="450"
               src="https://embed.figma.com/design/2prJ4RUgsjFpGgnAr5Rk5c/Cookie-Consent-Banner?node-id=1-3&embed-host=share"
               allowFullScreen
