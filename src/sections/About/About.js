@@ -23,9 +23,9 @@ const About = () => {
             <p>Principais motivações:</p>
             <ul className="guide-subsection">
               <li>Compartilhar descobertas</li>
-              <li>Entender melhor sobre intuitividade em banners</li>
-              <li>Pouca documentação técnica de banners</li>
-              <li>Faltam pesquisas sobre LGPD e UX</li>
+              <li>Entender sobre interatividade em banners</li>
+              <li>Pouca documentação sobre banners</li>
+              <li>Faltam pesquisas em LGPD e UX</li>
             </ul>
           </div>
           <div className="about-image">
