@@ -58,36 +58,46 @@ footer ul li p a:hover {
 }
 
 @media (max-width: 1024px) {
-  footer {
-    padding: 30px 40px;
-  }
-
   footer ul {
     flex-direction: column;
-    gap: 30px;
+    gap: 3em;
+    padding: 2em 3em;
   }
 
   footer ul li {
-    justify-content: center !important;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
   }
 
-  footer ul li p {
-    max-width: 100%;
+  .footer-logos {
+    flex-direction: row;
+    gap: 1em;
+
+    img:nth-child(1) {
+      width: 80px;
+    }
+
+    img:nth-child(2) {
+      width: 100px;
+    }
   }
 }
 
 @media (max-width: 768px) {
-  footer {
-    padding: 30px 20px;
+  footer ul {
+    padding: 2em 1.5em;
   }
 
-  footer ul li img {
-    width: 40px;
-  }
+  .footer-logos {
+    gap: 1.5em;
 
-  footer ul li:nth-child(2) img {
-    width: 60px;
+    img:nth-child(1) {
+      width: 60px;
+    }
+
+    img:nth-child(2) {
+      width: 80px;
+    }
   }
 }
