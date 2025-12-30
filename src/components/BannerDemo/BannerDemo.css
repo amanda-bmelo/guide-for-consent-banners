@@ -262,7 +262,7 @@
   max-width: 600px;
 }
 
-.display-none {
+.display-none, p.banner-subtext.display-none {
   display: none !important;
 }
 

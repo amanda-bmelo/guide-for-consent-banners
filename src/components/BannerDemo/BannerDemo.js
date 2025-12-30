@@ -98,7 +98,6 @@ export const Banner2 = ({ recommendationNumber = 0, onAction }) => {
 
   return (
     <div className="banner-demo banner-2">
-      {/* Texto principal no topo */}
       <div className="banner-text-content banner-2-top">
         <p className={`${recommendationNumber < 3 ? "blurred" : ""}`}>
           Usamos cookies para coletar dados de como é a sua interação com o
@@ -106,12 +105,10 @@ export const Banner2 = ({ recommendationNumber = 0, onAction }) => {
           normas da LGPD.
         </p>
         <p className={`${recommendationNumber < 4 ? "display-none" : ""}`}>
-          Nossa finalidade é entregar conteúdos mais próximos do seu interesse
-          e aumentar o engajamento com o site.
+          Nossa finalidade é entregar conteúdos mais próximos do seu interesse e
+          aumentar o engajamento com o site.
         </p>
       </div>
-      
-      {/* Layout dividido: texto secundário + toggles */}
       <div className="banner-2-layout">
         <div className="banner-text-content banner-2-secondary">
           <p
