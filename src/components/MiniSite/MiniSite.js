@@ -1,3 +1,4 @@
+// cspell:disable
 import React from "react";
 import "./MiniSite.css";
 

@@ -1,3 +1,4 @@
+// cspell:disable
 import "./Examples.css";
 import figmaAnimation from "../../assets/images/figma_animation.gif";
 

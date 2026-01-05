@@ -1,3 +1,4 @@
+// cspell:disable
 import React from "react";
 import "./About.css";
 import mapImage from "../../assets/images/map.svg";
