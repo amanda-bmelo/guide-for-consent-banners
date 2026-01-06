@@ -53,6 +53,9 @@ function Header({ onOpenCounterExample }) {
             <a href="#examples" onClick={closeMenu}>Exemplos</a>
           </li>
           <li>
+            <a href="#checklist" onClick={closeMenu}>Checklist</a>
+          </li>
+          <li>
             <a href="#about" onClick={closeMenu}>Informações</a>
           </li>
           <li>

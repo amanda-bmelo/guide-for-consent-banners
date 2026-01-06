@@ -4,6 +4,7 @@ import Home from "./sections/Home";
 import Guide from "./sections/Guide/Guide";
 import Preferences from "./sections/Preferences/Preferences";
 import Examples from "./sections/Examples";
+import Checklist from "./sections/Checklist";
 import About from "./sections/About";
 import Footer from "./components/Footer/Footer";
 import CounterExample from "./sections/CounterExample/CounterExample";
@@ -12,7 +13,6 @@ import "./App.css";
 function App() {
   const [isCounterExampleOpen, setIsCounterExampleOpen] = useState(false);
 
-  // Mostrar na primeira visita
   useEffect(() => {
     const hasSeenCounter = localStorage.getItem("hasSeenCounterExample");
     if (!hasSeenCounter) {
@@ -37,6 +37,7 @@ function App() {
         <Guide />
         <Preferences />
         <Examples />
+        <Checklist />
         <About />
       </main>
       <Footer />
