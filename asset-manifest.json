@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/guide-for-consent-banners/static/css/main.8321e779.css",
+    "main.js": "/guide-for-consent-banners/static/js/main.e3b26953.js",
+    "static/js/453.f1189032.chunk.js": "/guide-for-consent-banners/static/js/453.f1189032.chunk.js",
+    "static/media/bg_cookies.svg": "/guide-for-consent-banners/static/media/bg_cookies.18d56dc1f828db714ca4.svg",
+    "static/media/uff_logo.png": "/guide-for-consent-banners/static/media/uff_logo.540e74d5c0f3bf8f2dfa.png",
+    "static/media/cookie_jar.svg": "/guide-for-consent-banners/static/media/cookie_jar.e2b94a1b078222132648c84b41ea42ab.svg",
+    "static/media/banner_cookie_2.svg": "/guide-for-consent-banners/static/media/banner_cookie_2.c5f7f6cb42b099c6ac03f6ab72ea4140.svg",
+    "static/media/banner_cookie_1.svg": "/guide-for-consent-banners/static/media/banner_cookie_1.7c3216eca2d489773cedfd2d8ba178b4.svg",
+    "static/media/banner_cookie_3.svg": "/guide-for-consent-banners/static/media/banner_cookie_3.8929d37c6b9861ea345a6507fda919f0.svg",
+    "static/media/cookie.svg": "/guide-for-consent-banners/static/media/cookie.9f3cb3d818982cb7c13b.svg",
+    "static/media/wesley.svg": "/guide-for-consent-banners/static/media/wesley.3c5d2d24f49c994dd6fbe034842f93fc.svg",
+    "static/media/tcc.svg": "/guide-for-consent-banners/static/media/tcc.c82a3b2b5ca04f658a9ed2967aabffaf.svg",
+    "static/media/map.svg": "/guide-for-consent-banners/static/media/map.db759ed36d96a03847aed753d9a83350.svg",
+    "static/media/law.svg": "/guide-for-consent-banners/static/media/law.f421e5df3975fc67640ac447a879487b.svg",
+    "static/media/locker_icon.svg": "/guide-for-consent-banners/static/media/locker_icon.36d347a7e5bbb9e71aea431b4035af55.svg",
+    "index.html": "/guide-for-consent-banners/index.html",
+    "static/media/less_icon.svg": "/guide-for-consent-banners/static/media/less_icon.bac42a9495fb33aa2b1206ecaf43e17c.svg",
+    "static/media/close_icon.svg": "/guide-for-consent-banners/static/media/close_icon.f72ca69c838d87a8fd1b23c6dc78b7af.svg",
+    "static/media/plus_icon.svg": "/guide-for-consent-banners/static/media/plus_icon.b5cc15e281521229f3b6a92bc1236e46.svg",
+    "static/media/down_arrow.svg": "/guide-for-consent-banners/static/media/down_arrow.6375f52fe772c7c7cf51.svg",
+    "main.8321e779.css.map": "/guide-for-consent-banners/static/css/main.8321e779.css.map",
+    "main.e3b26953.js.map": "/guide-for-consent-banners/static/js/main.e3b26953.js.map",
+    "453.f1189032.chunk.js.map": "/guide-for-consent-banners/static/js/453.f1189032.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8321e779.css",
+    "static/js/main.e3b26953.js"
+  ]
+}
