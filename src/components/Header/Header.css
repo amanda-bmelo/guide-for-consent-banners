@@ -197,6 +197,11 @@
     font-size: 0.9rem;
   }
 
+  .counter-example-btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
   .icon {
     width: 2rem;
     height: 2rem;
