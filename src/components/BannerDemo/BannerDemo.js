@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./BannerDemo.css";
 import useBanner from "./useBanner";
 import BannerMinimized from "./BannerMinimized";
@@ -21,6 +21,13 @@ export const Banner1 = ({ recommendationNumber = 0, onAction }) => {
     getVisibilityClass,
   } = useBanner(recommendationNumber, onAction);
   const content = BANNER_1_CONTENT;
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    if (isModalOpen && modalRef.current) {
+      modalRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [isModalOpen]);
 
   if (isMinimized) {
     return <BannerMinimized bannerNumber={1} onRestore={restore} />;
@@ -29,9 +36,13 @@ export const Banner1 = ({ recommendationNumber = 0, onAction }) => {
   return (
     <div className="banner-wrapper">
       {isModalOpen && (
-        <div className="banner-modal-overlay">
+        <div className="banner-modal-overlay" ref={modalRef}>
           <PreferencesModal onClose={handleModalClose} />
-          <button className="modal-backdrop" onClick={closeModal} aria-label="Fechar modal" />
+          <button
+            className="modal-backdrop"
+            onClick={closeModal}
+            aria-label="Fechar modal"
+          />
         </div>
       )}
       <div className="banner-demo banner-1">
@@ -144,9 +155,16 @@ export const Banner3 = ({ recommendationNumber = 0, onAction }) => {
     getVisibilityClass,
   } = useBanner(recommendationNumber, onAction);
   const content = BANNER_3_CONTENT;
+  const modalRef = useRef(null);
 
   // Banner 3 has essential cookies: preferences and functionality
   const essentialCategories = ["preferences", "functionality"];
+
+  useEffect(() => {
+    if (isModalOpen && modalRef.current) {
+      modalRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [isModalOpen]);
 
   if (isMinimized) {
     return <BannerMinimized bannerNumber={3} onRestore={restore} />;
@@ -155,13 +173,17 @@ export const Banner3 = ({ recommendationNumber = 0, onAction }) => {
   return (
     <div className="banner-wrapper">
       {isModalOpen && (
-        <div className="banner-modal-overlay">
-          <PreferencesModal 
-            onClose={handleModalClose} 
+        <div className="banner-modal-overlay" ref={modalRef}>
+          <PreferencesModal
+            onClose={handleModalClose}
             essentialCategories={essentialCategories}
             showDeselectAll={true}
           />
-          <button className="modal-backdrop" onClick={closeModal} aria-label="Fechar modal" />
+          <button
+            className="modal-backdrop"
+            onClick={closeModal}
+            aria-label="Fechar modal"
+          />
         </div>
       )}
       <div className="banner-demo banner-3">

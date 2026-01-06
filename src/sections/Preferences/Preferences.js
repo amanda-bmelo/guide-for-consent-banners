@@ -1,5 +1,5 @@
 // cspell:disable
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import Card from "../../components/Card/Card";
 import PreferencesModal from "../../components/PreferencesModal/PreferencesModal";
 import "./Preferences.css";
@@ -35,9 +35,8 @@ const recommendations = [
 const Preferences = () => {
   const [hoveredElement, setHoveredElement] = useState(null);
   const [selectedElement, setSelectedElement] = useState(null);
-  const sectionRef = useRef(null);
+  const listRef = useRef(null);
 
-  // The active highlight is the selected one (if any), otherwise the hovered one
   const highlightedElement = selectedElement || hoveredElement;
 
   const handleCardHover = (highlightId) => {
@@ -48,24 +47,21 @@ const Preferences = () => {
     setHoveredElement(null);
   };
 
-  const handleCardClick = (highlightId) => {
+  const handleCardClick = (highlightId, event) => {
+    event.stopPropagation();
     setSelectedElement(highlightId);
   };
 
-  // Clear selection when clicking outside the cards
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (sectionRef.current && !sectionRef.current.contains(event.target)) {
-        setSelectedElement(null);
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, []);
+  const handleClearSelection = () => {
+    setSelectedElement(null);
+  };
 
   return (
-    <section id="preferences" className="section preferences-section" ref={sectionRef}>
+    <section
+      id="preferences"
+      className="section preferences-section"
+      onClick={handleClearSelection}
+    >
       <div className="preferences-header">
         <h2>Modal de preferências</h2>
         <h3>Uma alternativa para gerenciar as categorias de cookies</h3>
@@ -74,14 +70,16 @@ const Preferences = () => {
         <div className="preferences-modal-container">
           <PreferencesModal highlightedElement={highlightedElement} />
         </div>
-        <div className="preferences-list">
+        <div className="preferences-list" ref={listRef}>
           {recommendations.map((rec, idx) => (
             <div
-              className={`preferences-item ${selectedElement === rec.highlightId ? "selected" : ""}`}
+              className={`preferences-item ${
+                selectedElement === rec.highlightId ? "selected" : ""
+              }`}
               key={idx + 1}
               onMouseEnter={() => handleCardHover(rec.highlightId)}
               onMouseLeave={handleCardLeave}
-              onClick={() => handleCardClick(rec.highlightId)}
+              onClick={(e) => handleCardClick(rec.highlightId, e)}
             >
               <Card
                 number={idx + 1}

@@ -11,12 +11,13 @@ const useBanner = (recommendationNumber, onAction) => {
 
   const handleAction = (action) => {
     if (recommendationNumber < 6) return;
-    
+
     if (action === "manage") {
+      if (recommendationNumber < 7) return;
       setIsModalOpen(true);
       return;
     }
-    
+
     if (onAction) onAction(action);
     setIsMinimized(true);
   };
@@ -27,8 +28,6 @@ const useBanner = (recommendationNumber, onAction) => {
 
   const handleModalClose = (preferences) => {
     setIsModalOpen(false);
-    // Se preferences for null, o usuário fechou sem confirmar (clicou no X)
-    // Nesse caso, apenas fecha o modal sem minimizar
     if (preferences !== null) {
       setIsMinimized(true);
       if (onAction) onAction("preferences-saved", preferences);
@@ -41,7 +40,10 @@ const useBanner = (recommendationNumber, onAction) => {
    * @param {number} minRecommendation
    * @param {string} hiddenClass
    */
-  const getVisibilityClass = (minRecommendation, hiddenClass = "display-none") => {
+  const getVisibilityClass = (
+    minRecommendation,
+    hiddenClass = "display-none"
+  ) => {
     return recommendationNumber < minRecommendation ? hiddenClass : "";
   };
 
