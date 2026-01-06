@@ -157,8 +157,7 @@ export const Banner3 = ({ recommendationNumber = 0, onAction }) => {
   const content = BANNER_3_CONTENT;
   const modalRef = useRef(null);
 
-  // Banner 3 has essential cookies: preferences and functionality
-  const essentialCategories = ["preferences", "functionality"];
+  const essentialCategories = ["functionality"];
 
   useEffect(() => {
     if (isModalOpen && modalRef.current) {

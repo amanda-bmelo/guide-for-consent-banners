@@ -1,18 +1,6 @@
 // cspell:disable
 export const COOKIE_CATEGORIES = [
   {
-    id: "preferences",
-    name: "Cookies de preferências",
-    description:
-      "As informações sobre a sua atividade neste serviço (por exemplo, formulários que envia, conteúdos do site que visualiza) podem ser armazenadas e combinadas com outras, tais como a sua atividade anterior neste serviço ou noutros sites. Isto é então utilizado para criar ou melhorar um perfil sobre si com objetivo de recomendar conteúdos semelhantes a sua preferência.",
-    example: {
-      source: "El País",
-      text: "Lê vários artigos sobre como construir uma casa na árvore. Estas informações podem ser adicionadas a um perfil para assinalar o seu interesse em conteúdos relacionados com o exterior, bem como guias “faça você mesmo”.",
-    },
-    partners: ["FollowYourCursor SA", "LoveLikes Co."],
-    defaultChecked: true,
-  },
-  {
     id: "functionality",
     name: "Cookies de funcionalidade",
     description:
@@ -22,6 +10,18 @@ export const COOKIE_CATEGORIES = [
       text: "Uma pessoa está acessando pelo celular e no sistema de configurações de preferências de fonte, indica que a fonte utilizada é extra larga. Nossa interface seria adaptada para essa especificidade do seu dispositivo.",
     },
     partners: [],
+    defaultChecked: true,
+  },
+  {
+    id: "preferences",
+    name: "Cookies de preferências",
+    description:
+      "As informações sobre a sua atividade neste serviço (por exemplo, formulários que envia, conteúdos do site que visualiza) podem ser armazenadas e combinadas com outras, tais como a sua atividade anterior neste serviço ou noutros sites. Isto é então utilizado para criar ou melhorar um perfil sobre si com objetivo de recomendar conteúdos semelhantes a sua preferência.",
+    example: {
+      source: "El País",
+      text: "Lê vários artigos sobre como construir uma casa na árvore. Estas informações podem ser adicionadas a um perfil para assinalar o seu interesse em conteúdos relacionados com o exterior, bem como guias “faça você mesmo”.",
+    },
+    partners: ["FollowYourCursor SA", "LoveLikes Co."],
     defaultChecked: true,
   },
   {
