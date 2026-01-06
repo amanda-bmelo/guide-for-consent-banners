@@ -80,11 +80,56 @@
   box-shadow: 0 0.25rem 1rem rgba(60, 180, 231, 0.12);
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--light-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 1.25rem;
+  transition: background 0.2s ease;
+}
+
+.hamburger:hover {
+  background: var(--light-blue-color);
+}
+
+.hamburger-line {
+  width: 1.25rem;
+  height: 0.2rem;
+  background-color: var(--dark-color);
+  border-radius: 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(0.35rem, 0.35rem);
+}
+
+.hamburger.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(0.35rem, -0.35rem);
+}
+
 @media (max-width: 48rem) {
+  .hamburger {
+    display: flex;
+  }
+
   .header-nav {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
+    justify-content: space-between;
     padding: 1rem;
   }
 
@@ -93,30 +138,46 @@
   }
 
   .header-nav ul {
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0 0 0;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.3);
+  }
+
+  .header-nav ul.open {
+    display: flex;
   }
 
   .header-nav li {
     margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
 
-  .header-nav a {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.85rem;
+  .header-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
   }
 }
 
 @media (max-width: 30rem) {
   .header-nav a {
-    padding: 0.35rem 0.6rem;
-    font-size: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
   }
 
   .icon {
     width: 2rem;
     height: 2rem;
+  }
+
+  .hamburger {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 1rem;
   }
 }
