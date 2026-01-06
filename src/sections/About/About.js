@@ -56,7 +56,15 @@ const About = () => {
               <li>Sistema Operacional</li>
               <li>Tipo de navegador</li>
               <li>Informações do dispositivo usado</li>
-              <li>Saiba mais</li>
+              <li className="saiba-mais about-cookies">
+                <a
+                  href="https://goadopt.io/blog/cookies-e-lgpd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Saiba mais
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -76,13 +84,21 @@ const About = () => {
               <li>finalidade</li>
               <li>livre acesso</li>
               <li>segurança</li>
+              <li>prevenção da não discriminação</li>
               <li>adequação</li>
               <li>necessidade</li>
               <li>transparência</li>
               <li>qualidade dos dados</li>
-              <li>prevenção da não discriminação</li>
               <li>responsabilização</li>
-              <li>Saiba mais</li>
+              <li className="saiba-mais about-lgpd">
+                <a
+                  href="https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Saiba mais
+                </a>
+              </li>
             </ul>
           </div>
           <div className="about-image">
