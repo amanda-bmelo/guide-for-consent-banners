@@ -1,9 +1,10 @@
+//cspell:disable
 import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Icon from "../Icon/Icon";
 import "./Header.css";
 
-function Header() {
+function Header({ onOpenCounterExample }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,6 +13,13 @@ function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const handleCounterExample = () => {
+    closeMenu();
+    if (onOpenCounterExample) {
+      onOpenCounterExample();
+    }
   };
 
   return (
@@ -46,6 +54,11 @@ function Header() {
           </li>
           <li>
             <a href="#about" onClick={closeMenu}>Informações</a>
+          </li>
+          <li>
+            <button className="counter-example-btn" onClick={handleCounterExample}>
+              ⚠️ Contra-exemplo
+            </button>
           </li>
         </ul>
       </nav>
