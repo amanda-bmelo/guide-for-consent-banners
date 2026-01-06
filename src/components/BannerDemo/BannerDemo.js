@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BannerDemo.css";
 import useBanner from "./useBanner";
 import BannerMinimized from "./BannerMinimized";
+import PreferencesModal from "../PreferencesModal/PreferencesModal";
 import {
   BANNER_1_CONTENT,
   BANNER_2_CONTENT,
@@ -10,10 +11,15 @@ import {
 
 // Banner 1
 export const Banner1 = ({ recommendationNumber = 0, onAction }) => {
-  const { isMinimized, handleAction, restore, getVisibilityClass } = useBanner(
-    recommendationNumber,
-    onAction
-  );
+  const {
+    isMinimized,
+    isModalOpen,
+    handleAction,
+    closeModal,
+    handleModalClose,
+    restore,
+    getVisibilityClass,
+  } = useBanner(recommendationNumber, onAction);
   const content = BANNER_1_CONTENT;
 
   if (isMinimized) {
@@ -21,28 +27,36 @@ export const Banner1 = ({ recommendationNumber = 0, onAction }) => {
   }
 
   return (
-    <div className="banner-demo banner-1">
-      <div className="banner-text-content">
-        <p className={getVisibilityClass(3, "blurred")}>{content.mainText}</p>
-        <p className={getVisibilityClass(4)}>{content.dataText}</p>
-        <p className={getVisibilityClass(5)}>
-          {content.privacyText}{" "}
-          <a href={content.privacyUrl}>{content.privacyLink}</a>.
-        </p>
-        <p className={`banner-subtext ${getVisibilityClass(6)}`}>
-          {content.subtext}
-        </p>
-      </div>
-      <div className="banner-actions">
-        <button className="btn-accept" onClick={() => handleAction("accept")}>
-          {content.buttons.accept}
-        </button>
-        <button className="btn-reject" onClick={() => handleAction("reject")}>
-          {content.buttons.reject}
-        </button>
-        <button className="btn-manage" onClick={() => handleAction("manage")}>
-          {content.buttons.manage}
-        </button>
+    <div className="banner-wrapper">
+      {isModalOpen && (
+        <div className="banner-modal-overlay">
+          <PreferencesModal onClose={handleModalClose} />
+          <button className="modal-backdrop" onClick={closeModal} aria-label="Fechar modal" />
+        </div>
+      )}
+      <div className="banner-demo banner-1">
+        <div className="banner-text-content">
+          <p className={getVisibilityClass(3, "blurred")}>{content.mainText}</p>
+          <p className={getVisibilityClass(4)}>{content.dataText}</p>
+          <p className={getVisibilityClass(5)}>
+            {content.privacyText}{" "}
+            <a href={content.privacyUrl}>{content.privacyLink}</a>.
+          </p>
+          <p className={`banner-subtext ${getVisibilityClass(6)}`}>
+            {content.subtext}
+          </p>
+        </div>
+        <div className="banner-actions">
+          <button className="btn-accept" onClick={() => handleAction("accept")}>
+            {content.buttons.accept}
+          </button>
+          <button className="btn-reject" onClick={() => handleAction("reject")}>
+            {content.buttons.reject}
+          </button>
+          <button className="btn-manage" onClick={() => handleAction("manage")}>
+            {content.buttons.manage}
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -120,48 +134,68 @@ export const Banner2 = ({ recommendationNumber = 0, onAction }) => {
 
 // Banner 3
 export const Banner3 = ({ recommendationNumber = 0, onAction }) => {
-  const { isMinimized, handleAction, restore, getVisibilityClass } = useBanner(
-    recommendationNumber,
-    onAction
-  );
+  const {
+    isMinimized,
+    isModalOpen,
+    handleAction,
+    closeModal,
+    handleModalClose,
+    restore,
+    getVisibilityClass,
+  } = useBanner(recommendationNumber, onAction);
   const content = BANNER_3_CONTENT;
+
+  // Banner 3 has essential cookies: preferences and functionality
+  const essentialCategories = ["preferences", "functionality"];
 
   if (isMinimized) {
     return <BannerMinimized bannerNumber={3} onRestore={restore} />;
   }
 
   return (
-    <div className="banner-demo banner-3">
-      <div className="banner-text-content">
-        <p className={getVisibilityClass(3, "blurred")}>{content.mainText}</p>
-        <p className={getVisibilityClass(4)}>{content.dataText}</p>
-        <p className={getVisibilityClass(5)}>
-          {content.privacyText}{" "}
-          <a href={content.privacyUrl}>{content.privacyLink}</a>.
-        </p>
-        <p className={`banner-subtext ${getVisibilityClass(6)}`}>
-          {content.subtext}
-        </p>
-      </div>
-      <div className="banner-actions banner-3-actions">
-        <button
-          className="btn-accept-necessary"
-          onClick={() => handleAction("necessary")}
-        >
-          {content.buttons.acceptNecessary}
-        </button>
-        <button
-          className="btn-accept-all"
-          onClick={() => handleAction("accept")}
-        >
-          {content.buttons.acceptAll}
-        </button>
-        <button
-          className="btn-manage-alt"
-          onClick={() => handleAction("manage")}
-        >
-          {content.buttons.manage}
-        </button>
+    <div className="banner-wrapper">
+      {isModalOpen && (
+        <div className="banner-modal-overlay">
+          <PreferencesModal 
+            onClose={handleModalClose} 
+            essentialCategories={essentialCategories}
+            showDeselectAll={true}
+          />
+          <button className="modal-backdrop" onClick={closeModal} aria-label="Fechar modal" />
+        </div>
+      )}
+      <div className="banner-demo banner-3">
+        <div className="banner-text-content">
+          <p className={getVisibilityClass(3, "blurred")}>{content.mainText}</p>
+          <p className={getVisibilityClass(4)}>{content.dataText}</p>
+          <p className={getVisibilityClass(5)}>
+            {content.privacyText}{" "}
+            <a href={content.privacyUrl}>{content.privacyLink}</a>.
+          </p>
+          <p className={`banner-subtext ${getVisibilityClass(6)}`}>
+            {content.subtext}
+          </p>
+        </div>
+        <div className="banner-actions banner-3-actions">
+          <button
+            className="btn-accept-necessary"
+            onClick={() => handleAction("necessary")}
+          >
+            {content.buttons.acceptNecessary}
+          </button>
+          <button
+            className="btn-accept-all"
+            onClick={() => handleAction("accept")}
+          >
+            {content.buttons.acceptAll}
+          </button>
+          <button
+            className="btn-manage-alt"
+            onClick={() => handleAction("manage")}
+          >
+            {content.buttons.manage}
+          </button>
+        </div>
       </div>
     </div>
   );

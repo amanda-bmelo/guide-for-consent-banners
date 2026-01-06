@@ -1,0 +1,125 @@
+.preferences-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.preferences-content {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.preferences-modal-container {
+  flex: 0 0 auto;
+  position: sticky;
+  top: 6rem;
+}
+
+.preferences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  max-width: 32rem;
+}
+
+.preferences-item {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.preferences-item:hover {
+  transform: translateX(0.5rem);
+}
+
+.preferences-item.selected {
+  transform: translateX(0.5rem);
+}
+
+.preferences-item.selected .card {
+  box-shadow: 0 0 0 2px var(--yellow-color-primary), 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.preferences-item .card {
+  width: 100%;
+  min-height: auto;
+  padding: 1rem 1.25rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preferences-item .card-content {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preferences-item .card-number {
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: var(--yellow-color-primary);
+}
+
+.preferences-item .card-text {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0;
+  color: var(--dark-color);
+}
+
+.preferences-item .card-tags {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+.preferences-item .tags-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.preferences-item .card-tags > span {
+  display: none;
+}
+
+@media (max-width: 56.25rem) {
+  .preferences-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .preferences-modal-container {
+    position: relative;
+    top: 0;
+  }
+
+  .preferences-list {
+    max-width: 100%;
+  }
+
+  .preferences-item .card {
+    flex-direction: column;
+  }
+
+  .preferences-item .card-content {
+    flex-direction: column;
+  }
+
+  .preferences-item .card-number {
+    font-size: 1.5rem;
+  }
+
+  .preferences-item .card-text {
+    text-align: center;
+  }
+
+  .preferences-item .card-tags {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

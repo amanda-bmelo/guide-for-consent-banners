@@ -301,3 +301,39 @@
     width: 100%;
   }
 }
+
+/* Banner Wrapper with Modal */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.banner-modal-overlay {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 73%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation: fadeInUp 0.3s ease;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  border: none;
+  cursor: default;
+  z-index: -1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
