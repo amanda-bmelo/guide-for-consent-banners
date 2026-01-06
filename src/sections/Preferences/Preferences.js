@@ -26,7 +26,7 @@ const recommendations = [
     highlightId: "confirm",
   },
   {
-    text: "Informe os parceiros envolvidos em qualquer compartilhamento de dados, quais são o nome dos envolvidos.",
+    text: "Informe os parceiros envolvidos em qualquer compartilhamento de dados, quais são os nomes dos envolvidos.",
     tags: ["LGPD"],
     highlightId: "partners",
   },
