@@ -54,7 +54,7 @@ const Guide = () => {
   return (
     <section id="guide" className="section guide-section">
       <div className="guide-header">
-        <h2>Guia</h2>
+        <h2>Guia interativo</h2>
         <h3>Recomendações básicas para desenvolver banners</h3>
       </div>
       <div className="guide-list">
