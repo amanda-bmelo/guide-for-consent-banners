@@ -3,28 +3,28 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 80px 60px;
+  padding: 5rem 3.75rem;
 }
 
 .examples-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   list-style: none;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 2rem;
 }
 
 .examples-item {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .examples-item iframe {
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
   max-width: 100%;
   height: auto;
   aspect-ratio: 16/9;
@@ -41,42 +41,42 @@
   align-self: center;
 
   img {
-    width: 500px;
+    width: 31.25rem;
     height: auto;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
   }
 
   p {
-    padding: 10px;
+    padding: 0.625rem;
     text-align: right;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 87.5rem) {
   .examples-animation {
-    width: 200px;
-    right: 20px;
+    width: 12.5rem;
+    right: 1.25rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .examples-animation {
     position: static;
     transform: none;
     display: block;
-    margin: 60px auto 0;
+    margin: 3.75rem auto 0;
   }
 
   .examples-section {
-    padding: 60px 40px;
+    padding: 3.75rem 2.5rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .examples-item {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .examples-item iframe {
@@ -93,9 +93,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .examples-section {
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
   }
 
   .examples-section h2 {
@@ -107,6 +107,6 @@
   }
 
   .examples-animation {
-    width: 150px;
+    width: 9.375rem;
   }
 }

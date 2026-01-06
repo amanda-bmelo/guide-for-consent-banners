@@ -36,7 +36,7 @@ footer ul li {
 }
 
 footer ul li img {
-  width: 50px;
+  width: 3.125rem;
   height: auto;
 }
 
@@ -57,7 +57,7 @@ footer ul li p a:hover {
   color: var(--blue-color-primary);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   footer ul {
     flex-direction: column;
     gap: 3em;
@@ -75,16 +75,16 @@ footer ul li p a:hover {
     gap: 1em;
 
     img:nth-child(1) {
-      width: 80px;
+      width: 5rem;
     }
 
     img:nth-child(2) {
-      width: 100px;
+      width: 6.25rem;
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   footer ul {
     padding: 2em 1.5em;
   }
@@ -93,11 +93,11 @@ footer ul li p a:hover {
     gap: 1.5em;
 
     img:nth-child(1) {
-      width: 60px;
+      width: 3.75rem;
     }
 
     img:nth-child(2) {
-      width: 80px;
+      width: 5rem;
     }
   }
 }

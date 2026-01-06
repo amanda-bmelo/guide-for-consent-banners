@@ -40,7 +40,7 @@
 }
 
 .preferences-item.selected .card {
-  box-shadow: 0 0 0 2px var(--yellow-color-primary), 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 0.125rem var(--yellow-color-primary), 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 .preferences-item .card {

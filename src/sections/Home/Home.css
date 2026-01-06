@@ -8,8 +8,8 @@
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 75rem;
+  padding: 0 1.25rem;
 }
 
 .home-section h1 {
@@ -31,7 +31,7 @@
 }
 
 .home-section .down-arrow:hover .icon {
-  transform: translateY(18px);
+  transform: translateY(1.125rem);
 }
 
 .home-section .legally {
@@ -42,14 +42,14 @@
   color: var(--dark-blue-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .home-section h1 {
     font-size: 2.2rem;
     margin-bottom: 2.5rem;
   }
 
   .home-section .down-arrow .icon {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

@@ -4,12 +4,13 @@
   padding: 1.5rem;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
   width: 25rem;
+  min-width: fit-content;
   position: relative;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .preferences-modal.highlighted {
-  box-shadow: 0 0 0 3px var(--yellow-color-primary),
+  box-shadow: 0 0 0 0.1875rem var(--yellow-color-primary),
     0 0.5rem 2rem rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
 }
@@ -54,7 +55,7 @@
 
 .deselect-all-row.highlighted {
   background-color: rgba(204, 149, 8, 0.1);
-  box-shadow: 0 0 0 2px var(--yellow-color-primary);
+  box-shadow: 0 0 0 0.125rem var(--yellow-color-primary);
 }
 
 .deselect-all-text {
@@ -77,11 +78,11 @@
 
 .cookie-categories.highlighted {
   background-color: rgba(204, 149, 8, 0.1);
-  box-shadow: 0 0 0 2px var(--yellow-color-primary);
+  box-shadow: 0 0 0 0.125rem var(--yellow-color-primary);
 }
 
 .cookie-category {
-  border-bottom: 1px solid var(--light-gray-color);
+  border-bottom: 0.0625rem solid var(--light-gray-color);
   padding-bottom: 0.75rem;
 }
 
@@ -155,7 +156,7 @@
 
 .example-box {
   background-color: var(--light-gray-color);
-  border: 1px solid var(--medium-gray-color);
+  border: 0.0625rem solid var(--medium-gray-color);
   border-radius: 0.375rem;
   padding: 0.625rem;
 }
@@ -191,7 +192,7 @@
 .partners-button.highlighted {
   background-color: var(--yellow-color-primary);
   color: var(--dark-color);
-  box-shadow: 0 0 0 3px rgba(204, 149, 8, 0.4);
+  box-shadow: 0 0 0 0.1875rem rgba(204, 149, 8, 0.4);
   transform: scale(1.05);
 }
 
@@ -243,7 +244,7 @@
   right: 0;
   bottom: 0;
   background-color: var(--light-gray-color);
-  border: 2px solid var(--yellow-color-primary);
+  border: 0.125rem solid var(--yellow-color-primary);
   border-radius: 1.25rem;
   transition: 0.3s;
 }
@@ -319,7 +320,7 @@
 
 .modal-actions.highlighted {
   background-color: rgba(204, 149, 8, 0.1);
-  box-shadow: 0 0 0 2px var(--yellow-color-primary);
+  box-shadow: 0 0 0 0.125rem var(--yellow-color-primary);
 }
 
 .modal-actions button {
@@ -343,7 +344,7 @@
 
 .modal-actions .btn-reject-all.highlighted {
   border-color: var(--yellow-color-primary);
-  box-shadow: 0 0 0 2px var(--yellow-color-primary);
+  box-shadow: 0 0 0 0.125rem var(--yellow-color-primary);
 }
 
 .modal-actions .btn-confirm {
@@ -353,7 +354,7 @@
 }
 
 .modal-actions .btn-confirm.highlighted {
-  box-shadow: 0 0 0 3px var(--yellow-color-primary);
+  box-shadow: 0 0 0 0.1875rem var(--yellow-color-primary);
 }
 
 /* Responsive */
