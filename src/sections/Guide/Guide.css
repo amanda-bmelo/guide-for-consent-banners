@@ -91,13 +91,12 @@
 
 .guide-item {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: stretch;
   justify-content: center;
   gap: 3rem;
   width: 100%;
   max-width: 62.5rem;
-  min-width: fit-content;
 }
 
 .guide-item:nth-child(even) {
@@ -107,6 +106,7 @@
 .guide-item .card {
   flex: 0 0 20rem;
   width: 20rem;
+  min-width: 0;
 }
 
 .guide-image {
@@ -123,10 +123,12 @@
   box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 56.25rem) {
+@media (max-width: 48rem) {
   .guide-item {
     flex-direction: column !important;
+    flex-wrap: wrap;
     gap: 1.5rem;
+    align-items: center !important;
   }
 
   .guide-item .card {

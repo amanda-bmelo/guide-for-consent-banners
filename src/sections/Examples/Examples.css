@@ -1,87 +1,49 @@
 .examples-group {
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 5rem 3.75rem;
+  justify-content: center;
+  padding: 3rem 2rem;
 }
 
 .examples-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  gap: 2.5rem;
+  justify-content: center;
+  gap: 3rem;
   list-style: none;
-  max-width: 75rem;
-  margin: 0 2rem;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .examples-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1rem;
 }
 
 .examples-item iframe {
   border-radius: 0.625rem;
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
+  width: 20rem;
+  height: 28rem;
 }
 
 .examples-item h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--dark-color);
-  white-space: nowrap;
-}
-
-.examples-animation {
-  align-self: center;
-
-  img {
-    width: 31.25rem;
-    height: auto;
-    border-radius: 1.5625rem;
-  }
-
-  p {
-    padding: 0.625rem;
-    text-align: right;
-  }
-}
-
-@media (max-width: 87.5rem) {
-  .examples-animation {
-    width: 12.5rem;
-    right: 1.25rem;
-  }
-}
-
-@media (max-width: 75rem) {
-  .examples-animation {
-    position: static;
-    transform: none;
-    display: block;
-    margin: 3.75rem auto 0;
-  }
-
-  .examples-section {
-    padding: 3.75rem 2.5rem;
-  }
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 56.25rem) {
-  .examples-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
+  .examples-list {
+    gap: 2rem;
   }
 
   .examples-item iframe {
-    width: 100%;
-    height: auto;
+    width: 18rem;
+    height: 25rem;
   }
 
   .examples-section h2 {
@@ -102,11 +64,16 @@
     font-size: 2rem;
   }
 
-  .examples-item h4 {
-    font-size: 1.5rem;
+  .examples-group {
+    padding: 1.5rem 0.5rem;
   }
 
-  .examples-animation {
-    width: 9.375rem;
+  .examples-item iframe {
+    width: 16rem;
+    height: 22rem;
+  }
+
+  .examples-item h4 {
+    font-size: 1.25rem;
   }
 }

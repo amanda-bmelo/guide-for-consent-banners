@@ -11,13 +11,18 @@
   display: flex;
   gap: 2.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .about-content {
   flex: 2;
-  max-width: 43.75rem;
   border-radius: 1.25rem;
   padding: 2.5rem;
+}
+
+.section.about-content {
+  min-width: 35rem !important;
+  max-width: 50rem !important;
 }
 
 .about-content h3 {
@@ -27,6 +32,10 @@
   margin-bottom: 1.875rem;
   line-height: 1;
   text-align: center;
+}
+
+.about-content p {
+  font-size: 1.125rem;
 }
 
 .about-content p:last-of-type {
@@ -39,7 +48,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  justify-content:space-between;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -51,7 +60,7 @@
   border-radius: 0.625rem;
   font-size: 1rem;
   font-weight: 600;
-  width: max-content;
+  width: fit-content;
 }
 
 .guide-subsection li {
@@ -67,55 +76,39 @@
 }
 
 .about-image {
-  flex: 1.5;
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20rem;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 21.875rem;
+  max-width: 15rem;
   height: auto;
   object-fit: contain;
 }
 
-@media (max-width: 64rem) {
-  .about-item {
-    flex-direction: column;
-    gap: 2.5rem;
+@media (max-width: 30rem) {
+  .about-section {
+    padding: 1.5rem 0.5rem;
   }
 
-  .about-content,
-  .about-image {
-    max-width: 100%;
-  }
-
-  .about-content h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 48rem) {
-  .about-content {
-    padding: 3.75rem 1.25rem;
-  }
-
-  .about-section h2 {
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .about-content h3 {
-    font-size: 2rem;
-  }
-
-  .about-content p {
-    font-size: 1.1rem;
+  .about-content ul {
+    justify-content: center;
   }
 
   .about-content ul li {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .section.about-content {
+    min-width: 15rem !important;
   }
 }
