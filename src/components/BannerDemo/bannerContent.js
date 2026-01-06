@@ -49,7 +49,7 @@ export const BANNER_3_CONTENT = {
   subtext:
     "Ao finalizar com o banner, ele será minimizado, você pode mudar as escolhas sempre que quiser!",
   buttons: {
-    acceptNecessary: "Aceitar somente os necessários",
+    acceptNecessary: "Aceitar somente os essenciais",
     acceptAll: "Aceitar todos",
     manage: "Gerenciar",
   },

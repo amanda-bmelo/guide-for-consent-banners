@@ -92,7 +92,7 @@ const PreferencesModal = ({ highlightedElement, onClose, essentialCategories = [
 
       {(showDeselectAll || highlightedElement === "buttons") && (
         <div className={`deselect-all-row ${isHighlighted("buttons")}`}>
-          <span className="deselect-all-text">Desselecionar não necessários</span>
+          <span className="deselect-all-text">Desselecionar não essenciais</span>
           <label className="toggle">
             <input
               type="checkbox"
