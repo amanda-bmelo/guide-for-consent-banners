@@ -1,5 +1,5 @@
 // cspell:disable
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../components/Card/Card";
 import MiniSite from "../../components/MiniSite/MiniSite";
 import BannerShowcase from "../../components/BannerDemo/BannerDemo";
@@ -44,6 +44,8 @@ const recommendations = [
 ];
 
 const Guide = () => {
+  const [activeFilter, setActiveFilter] = useState(null);
+
   const scrollToRecommendation = (index) => {
     const guideItems = document.querySelectorAll(".guide-item");
     if (guideItems[index]) {
@@ -51,25 +53,66 @@ const Guide = () => {
     }
   };
 
+  const handleFilterClick = (tag) => {
+    setActiveFilter(activeFilter === tag ? null : tag);
+  };
+
+  const filteredRecommendations = activeFilter
+    ? recommendations.filter((rec) => rec.tags.includes(activeFilter))
+    : recommendations;
+
   return (
     <section id="guide" className="section guide-section">
       <div className="guide-header">
         <h2>Guia interativo</h2>
         <h3>Recomendações básicas para desenvolver banners</h3>
       </div>
+
+      <div className="guide-filter">
+        <p className="filter-description">
+          As tags indicam se a recomendação tem origem nas boas práticas de UX ou nos princípios da LGPD.
+        </p>
+        <div className="filter-buttons">
+          <h4>Filtre por uma tag</h4>
+          <button
+            className={`filter-btn filter-btn-ux ${activeFilter === "UX" ? "active" : ""}`}
+            onClick={() => handleFilterClick("UX")}
+          >
+            UX
+          </button>
+          <button
+            className={`filter-btn filter-btn-lgpd ${activeFilter === "LGPD" ? "active" : ""}`}
+            onClick={() => handleFilterClick("LGPD")}
+          >
+            LGPD
+          </button>
+          {activeFilter && (
+            <button
+              className="filter-btn filter-btn-clear"
+              onClick={() => setActiveFilter(null)}
+            >
+              Limpar filtro
+            </button>
+          )}
+        </div>
+      </div>
+
       <div className="guide-list">
-        {recommendations.map((rec, idx) => (
-          <div className="guide-item" key={idx + 1}>
-            <Card number={idx + 1} text={rec.text} tags={rec.tags} />
-            <div className="guide-image">
-              {idx === 0 ? (
-                <MiniSite onButtonClick={() => scrollToRecommendation(1)} />
-              ) : (
-                <BannerShowcase recommendationNumber={idx + 1} />
-              )}
+        {filteredRecommendations.map((rec) => {
+          const originalIndex = recommendations.indexOf(rec);
+          return (
+            <div className="guide-item" key={originalIndex + 1}>
+              <Card number={originalIndex + 1} text={rec.text} tags={rec.tags} />
+              <div className="guide-image">
+                {originalIndex === 0 ? (
+                  <MiniSite onButtonClick={() => scrollToRecommendation(1)} />
+                ) : (
+                  <BannerShowcase recommendationNumber={originalIndex + 1} />
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
