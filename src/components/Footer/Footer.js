@@ -5,7 +5,7 @@ import tccSvg from "../../assets/images/tcc.svg";
 import wesleySvg from "../../assets/images/wesley.svg";
 import uffLogo from "../../assets/images/uff_logo.png";
 import icLogo from "../../assets/images/ic_logo.png";
-import sergLogo from "../../assets/images/serg_uff.png";
+import sergLogo from "../../assets/images/serg_logo.png";
 
 function Footer() {
   return (

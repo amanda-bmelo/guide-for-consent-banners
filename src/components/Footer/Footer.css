@@ -12,7 +12,7 @@ footer ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 10em;
+  padding: 2em 8em;
 }
 
 footer ul li {
@@ -23,9 +23,10 @@ footer ul li {
 
 .footer-logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
 }
 
 .footer-logos a {
@@ -36,19 +37,19 @@ footer ul li {
 
 .footer-logos a:nth-child(1) img,
 .footer-logos a:nth-child(3) img {
-  height: 5rem;
+  height: 4rem;
   width: auto;
 }
 
 .footer-logos a:nth-child(2) img {
-  height: 4rem;
+  height: 6rem;
   width: auto;
 }
 
 footer ul li p {
   font-size: 1rem;
   line-height: 1.5;
-  max-width: 28em;
+  max-width: 24em;
   padding: 1em;
 }
 
@@ -79,15 +80,6 @@ footer ul li p a:hover {
     flex-direction: row;
     gap: 1em;
   }
-
-  .footer-logos a:nth-child(1) img,
-  .footer-logos a:nth-child(3) img {
-    height: 4rem;
-  }
-
-  .footer-logos a:nth-child(2) img {
-    height: 3rem;
-  }
 }
 
 @media (max-width: 48rem) {
@@ -97,14 +89,5 @@ footer ul li p a:hover {
 
   .footer-logos {
     gap: 1.5em;
-  }
-
-  .footer-logos a:nth-child(1) img,
-  .footer-logos a:nth-child(3) img {
-    height: 3rem;
-  }
-
-  .footer-logos a:nth-child(2) img {
-    height: 2.5rem;
   }
 }
