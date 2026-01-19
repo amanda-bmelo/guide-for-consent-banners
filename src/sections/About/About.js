@@ -14,12 +14,20 @@ const About = () => {
           <div className="section about-content">
             <h3>Sobre o Guia</h3>
             <p>
-              A ideia do Guia surge da pesquisa de mestrado do Wesley da Silva,
-              em que foi descoberto que a maioria dos sites que utilizam
-              banners, para coletar o consentimento das pessoas, estão
-              infringindo a LGPD. Em outros casos, os banners utilizam de
-              estratégias de persuasão conhecidas como padrões enganosos ou
-              decepcionantes.
+              A ideia do Guia surge da pesquisa de mestrado do Wesley da Silva
+              sob orientação da professora{" "}
+              <a
+                href="https://scholar.google.com/citations?user=exVgvFgAAAAJ&hl=pt-BR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Luciana Salgado
+              </a>
+              , membros do Semiotic Engineering Research Group (SERG.UFF).
+              Através do método de inspeção semiótica foi descoberto que sites
+              relevantes de notícias utilizam banners que não estão de acordo
+              com a LGPD. Em outros casos, os banners utilizam de estratégias de
+              persuasão conhecidas como padrões enganosos ou decepcionantes.
             </p>
             <p>Principais motivações:</p>
             <ul className="guide-subsection">
@@ -27,6 +35,15 @@ const About = () => {
               <li>Entender sobre interatividade em banners</li>
               <li>Pouca documentação sobre banners</li>
               <li>Faltam pesquisas em LGPD e UX</li>
+              <li className="saiba-mais about-guide">
+                <a
+                  href="https://sites.google.com/view/serguff/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SERG UFF
+                </a>
+              </li>
             </ul>
           </div>
           <div className="about-image">

@@ -20,6 +20,16 @@
   padding: 2.5rem;
 }
 
+.about-content p a {
+  color: var(--dark-blue-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.about-content p a:hover {
+  color: var(--blue-color-primary);
+}
+
 .section.about-content {
   min-width: 35rem !important;
   max-width: 50rem !important;
@@ -94,6 +104,10 @@
 .about-content ul li.saiba-mais a {
   color: inherit;
   text-decoration: none;
+}
+
+.about-content ul li.saiba-mais.about-guide {
+  background-color: var(--light-red-color);
 }
 
 .about-content ul li.saiba-mais.about-cookies {
