@@ -14,6 +14,14 @@ const About = () => {
           <div className="section about-content">
             <h3>Sobre o Guia</h3>
             <p>
+              Esse site é um produto do Trabalho de Conclusão de Curso (TCC) da
+              aluna{" "}
+              <a href="https://www.linkedin.com/in/amanda-bmelo/" target="_blank" rel="noopener noreferrer">
+                Amanda Melo
+              </a>
+              .
+            </p>
+            <p>
               A ideia do Guia surge da pesquisa de mestrado do Wesley da Silva
               sob orientação da professora{" "}
               <a
