@@ -1,9 +1,11 @@
+// cspell:disable
 import React from "react";
 import "./Footer.css";
 import tccSvg from "../../assets/images/tcc.svg";
 import wesleySvg from "../../assets/images/wesley.svg";
 import uffLogo from "../../assets/images/uff_logo.png";
 import icLogo from "../../assets/images/ic_logo.png";
+import sergLogo from "../../assets/images/serg_uff.png";
 
 function Footer() {
   return (
@@ -21,13 +23,33 @@ function Footer() {
           </p>
         </li>
         <li className="footer-logos">
-          <img src={uffLogo} alt="Universidade Federal Fluminense logo"></img>
-          <img src={icLogo} alt="Computer Institute logo"></img>
+          <a
+            href="https://www.uff.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={uffLogo} alt="Universidade Federal Fluminense logo"></img>
+          </a>
+          <a
+            href="https://www.ic.uff.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={icLogo} alt="Computer Institute logo"></img>
+          </a>
+          <a
+            href="https://sites.google.com/view/serguff"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={sergLogo} alt="SERG UFF logo"></img>
+          </a>
         </li>
         <li>
           <img src={tccSvg} alt="Document icon"></img>
           <p>
-            Site desenvolvido pela aluna Amanda Melo como resultado do seu Trabalho de Conclusão de Curso.{" "}
+            Site desenvolvido pela aluna Amanda Melo como resultado do seu
+            Trabalho de Conclusão de Curso.{" "}
             <a href="https://www.ic.uff.br/teses-e-dissertacoes/">Saiba mais</a>
           </p>
         </li>

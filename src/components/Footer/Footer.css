@@ -24,20 +24,25 @@ footer ul li {
 .footer-logos {
   display: flex;
   justify-content: center;
-  gap: 5em;
-
-  img:nth-child(1) {
-    width: 20%;
-  }
-
-  img:nth-child(2) {
-    width: 25%;
-  }
+  align-items: center;
+  gap: 3em;
 }
 
-footer ul li img {
-  width: 3.125rem;
-  height: auto;
+.footer-logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logos a:nth-child(1) img,
+.footer-logos a:nth-child(3) img {
+  height: 5rem;
+  width: auto;
+}
+
+.footer-logos a:nth-child(2) img {
+  height: 4rem;
+  width: auto;
 }
 
 footer ul li p {
@@ -73,14 +78,15 @@ footer ul li p a:hover {
   .footer-logos {
     flex-direction: row;
     gap: 1em;
+  }
 
-    img:nth-child(1) {
-      width: 5rem;
-    }
+  .footer-logos a:nth-child(1) img,
+  .footer-logos a:nth-child(3) img {
+    height: 4rem;
+  }
 
-    img:nth-child(2) {
-      width: 6.25rem;
-    }
+  .footer-logos a:nth-child(2) img {
+    height: 3rem;
   }
 }
 
@@ -91,13 +97,14 @@ footer ul li p a:hover {
 
   .footer-logos {
     gap: 1.5em;
+  }
 
-    img:nth-child(1) {
-      width: 3.75rem;
-    }
+  .footer-logos a:nth-child(1) img,
+  .footer-logos a:nth-child(3) img {
+    height: 3rem;
+  }
 
-    img:nth-child(2) {
-      width: 5rem;
-    }
+  .footer-logos a:nth-child(2) img {
+    height: 2.5rem;
   }
 }
