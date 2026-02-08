@@ -190,7 +190,6 @@
 }
 
 .partners-button.highlighted {
-  color: var(--medium-dark-color);
   font-weight: 600;
   box-shadow: 0 0 0 0.2rem rgba(204, 149, 8, 0.4);
   transform: scale(1.05);

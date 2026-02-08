@@ -34,6 +34,8 @@ const PreferencesModal = ({ highlightedElement, onClose, essentialCategories = [
         behavior: "smooth",
         block: "center",
       });
+      // Auto-click partners button when highlighted
+      setOpenPartnersId(COOKIE_CATEGORIES[1].id);
     }
   }, [highlightedElement]);
 
