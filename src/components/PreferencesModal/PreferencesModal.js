@@ -24,7 +24,7 @@ const PreferencesModal = ({ highlightedElement, onClose, essentialCategories = [
   // Auto-expand first category when highlighting partners
   const effectiveExpandedCategory =
     highlightedElement === "partners"
-      ? COOKIE_CATEGORIES[0].id
+      ? COOKIE_CATEGORIES[1].id
       : expandedCategory;
 
   // Auto-scroll to partners button when highlighted
@@ -159,7 +159,7 @@ const PreferencesModal = ({ highlightedElement, onClose, essentialCategories = [
                   <div className="category-partners">
                     <button
                       ref={
-                        category.id === COOKIE_CATEGORIES[0].id
+                        category.id === COOKIE_CATEGORIES[1].id
                           ? partnersButtonRef
                           : null
                       }

@@ -190,9 +190,9 @@
 }
 
 .partners-button.highlighted {
-  background-color: var(--yellow-color-primary);
-  color: var(--dark-color);
-  box-shadow: 0 0 0 0.1875rem rgba(204, 149, 8, 0.4);
+  color: var(--medium-dark-color);
+  font-weight: 600;
+  box-shadow: 0 0 0 0.2rem rgba(204, 149, 8, 0.4);
   transform: scale(1.05);
 }
 
