@@ -7,7 +7,7 @@ const Home = () => {
     <section id="home" className="home-section">
       <div className="container">
         <h1>
-          Guia para desenvolver banners de consentimento de cookies{" "}
+          Guia para desenvolvimento de banners de consentimento{" "}
           <strong className="legally">legalmente</strong> e{" "}
           <strong className="cool">legais</strong>
         </h1>
