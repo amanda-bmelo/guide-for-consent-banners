@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/guide-for-consent-banners/static/css/main.4cbc8c76.css",
-    "main.js": "/guide-for-consent-banners/static/js/main.2663925f.js",
+    "main.css": "/guide-for-consent-banners/static/css/main.27024864.css",
+    "main.js": "/guide-for-consent-banners/static/js/main.25ab72d6.js",
     "static/js/453.f1189032.chunk.js": "/guide-for-consent-banners/static/js/453.f1189032.chunk.js",
     "static/media/bg_cookies.svg": "/guide-for-consent-banners/static/media/bg_cookies.cf31c6ccdc052c0d503d.svg",
     "static/media/uff_logo.png": "/guide-for-consent-banners/static/media/uff_logo.540e74d5c0f3bf8f2dfa.png",
@@ -21,12 +21,12 @@
     "static/media/close_icon.svg": "/guide-for-consent-banners/static/media/close_icon.f72ca69c838d87a8fd1b23c6dc78b7af.svg",
     "static/media/plus_icon.svg": "/guide-for-consent-banners/static/media/plus_icon.b5cc15e281521229f3b6a92bc1236e46.svg",
     "static/media/down_arrow.svg": "/guide-for-consent-banners/static/media/down_arrow.6375f52fe772c7c7cf51.svg",
-    "main.4cbc8c76.css.map": "/guide-for-consent-banners/static/css/main.4cbc8c76.css.map",
-    "main.2663925f.js.map": "/guide-for-consent-banners/static/js/main.2663925f.js.map",
+    "main.27024864.css.map": "/guide-for-consent-banners/static/css/main.27024864.css.map",
+    "main.25ab72d6.js.map": "/guide-for-consent-banners/static/js/main.25ab72d6.js.map",
     "453.f1189032.chunk.js.map": "/guide-for-consent-banners/static/js/453.f1189032.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cbc8c76.css",
-    "static/js/main.2663925f.js"
+    "static/css/main.27024864.css",
+    "static/js/main.25ab72d6.js"
   ]
 }
